@@ -31,7 +31,7 @@ const a = prompt('Один из последних просмотренных ф
 
 if (personalMovieDB.count < 10) {
     console.log('Переглянута дуже мала кількість фільмів!');
-} else if (10 < personalMovieDB.count < 30) {
+} else if (personalMovieDB.count < 10 && personalMovieDB.count > 30 ) {
     console.log('Ви Любитель кіно!:)');
 } else if (personalMovieDB.count >= 30 ) {
     console.log('Ви кіноман!');
